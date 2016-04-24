@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F044AA531CCCEE45006FFFCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F044AA521CCCEE45006FFFCE /* main.m */; };
+		F044AA561CCCEE45006FFFCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F044AA551CCCEE45006FFFCE /* AppDelegate.m */; };
+		F044AA591CCCEE45006FFFCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F044AA581CCCEE45006FFFCE /* ViewController.m */; };
+		F044AA5C1CCCEE45006FFFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F044AA5A1CCCEE45006FFFCE /* Main.storyboard */; };
+		F044AA5E1CCCEE45006FFFCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F044AA5D1CCCEE45006FFFCE /* Assets.xcassets */; };
+		F044AA611CCCEE45006FFFCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F044AA5F1CCCEE45006FFFCE /* LaunchScreen.storyboard */; };
+		F044AA6B1CCCF68F006FFFCE /* AES128Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F044AA6A1CCCF68F006FFFCE /* AES128Helper.m */; };
+		F4F93A84E36D8F127BB3BBDB /* libPods-AES128Helper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25B6BC38BDC454236F648260 /* libPods-AES128Helper.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25B6BC38BDC454236F648260 /* libPods-AES128Helper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AES128Helper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3CCE04285D9B645DBE4C78 /* Pods-AES128Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AES128Helper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AES128Helper/Pods-AES128Helper.debug.xcconfig"; sourceTree = "<group>"; };
+		8EB440AF6D5AE39D6A1052BE /* Pods-AES128Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AES128Helper.release.xcconfig"; path = "Pods/Target Support Files/Pods-AES128Helper/Pods-AES128Helper.release.xcconfig"; sourceTree = "<group>"; };
+		F044AA4E1CCCEE45006FFFCE /* AES128Helper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AES128Helper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F044AA521CCCEE45006FFFCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F044AA541CCCEE45006FFFCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F044AA551CCCEE45006FFFCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F044AA571CCCEE45006FFFCE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F044AA581CCCEE45006FFFCE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F044AA5B1CCCEE45006FFFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F044AA5D1CCCEE45006FFFCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F044AA601CCCEE45006FFFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F044AA621CCCEE45006FFFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F044AA691CCCF68F006FFFCE /* AES128Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES128Helper.h; sourceTree = "<group>"; };
+		F044AA6A1CCCF68F006FFFCE /* AES128Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES128Helper.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F044AA4B1CCCEE45006FFFCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4F93A84E36D8F127BB3BBDB /* libPods-AES128Helper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		344B5F0E1E2BBC01E5E16F4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B3CCE04285D9B645DBE4C78 /* Pods-AES128Helper.debug.xcconfig */,
+				8EB440AF6D5AE39D6A1052BE /* Pods-AES128Helper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C393714DEF03056D90AF5FA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25B6BC38BDC454236F648260 /* libPods-AES128Helper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F044AA451CCCEE45006FFFCE = {
+			isa = PBXGroup;
+			children = (
+				F044AA501CCCEE45006FFFCE /* AES128Helper */,
+				F044AA4F1CCCEE45006FFFCE /* Products */,
+				344B5F0E1E2BBC01E5E16F4D /* Pods */,
+				C393714DEF03056D90AF5FA8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F044AA4F1CCCEE45006FFFCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F044AA4E1CCCEE45006FFFCE /* AES128Helper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F044AA501CCCEE45006FFFCE /* AES128Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F044AA681CCCF68F006FFFCE /* Encrypt */,
+				F044AA541CCCEE45006FFFCE /* AppDelegate.h */,
+				F044AA551CCCEE45006FFFCE /* AppDelegate.m */,
+				F044AA571CCCEE45006FFFCE /* ViewController.h */,
+				F044AA581CCCEE45006FFFCE /* ViewController.m */,
+				F044AA5A1CCCEE45006FFFCE /* Main.storyboard */,
+				F044AA5D1CCCEE45006FFFCE /* Assets.xcassets */,
+				F044AA5F1CCCEE45006FFFCE /* LaunchScreen.storyboard */,
+				F044AA621CCCEE45006FFFCE /* Info.plist */,
+				F044AA511CCCEE45006FFFCE /* Supporting Files */,
+			);
+			path = AES128Helper;
+			sourceTree = "<group>";
+		};
+		F044AA511CCCEE45006FFFCE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F044AA521CCCEE45006FFFCE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F044AA681CCCF68F006FFFCE /* Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				F044AA691CCCF68F006FFFCE /* AES128Helper.h */,
+				F044AA6A1CCCF68F006FFFCE /* AES128Helper.m */,
+			);
+			path = Encrypt;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F044AA4D1CCCEE45006FFFCE /* AES128Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F044AA651CCCEE45006FFFCE /* Build configuration list for PBXNativeTarget "AES128Helper" */;
+			buildPhases = (
+				C4A08B1F513E7E9F4DFD1509 /* 📦 Check Pods Manifest.lock */,
+				F044AA4A1CCCEE45006FFFCE /* Sources */,
+				F044AA4B1CCCEE45006FFFCE /* Frameworks */,
+				F044AA4C1CCCEE45006FFFCE /* Resources */,
+				309DE4D0CDC462E1021A3E26 /* 📦 Embed Pods Frameworks */,
+				19B264AC09020A8E09D94C21 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AES128Helper;
+			productName = AES128Helper;
+			productReference = F044AA4E1CCCEE45006FFFCE /* AES128Helper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F044AA461CCCEE45006FFFCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = zengchao;
+				TargetAttributes = {
+					F044AA4D1CCCEE45006FFFCE = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = F044AA491CCCEE45006FFFCE /* Build configuration list for PBXProject "AES128Helper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F044AA451CCCEE45006FFFCE;
+			productRefGroup = F044AA4F1CCCEE45006FFFCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F044AA4D1CCCEE45006FFFCE /* AES128Helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F044AA4C1CCCEE45006FFFCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F044AA611CCCEE45006FFFCE /* LaunchScreen.storyboard in Resources */,
+				F044AA5E1CCCEE45006FFFCE /* Assets.xcassets in Resources */,
+				F044AA5C1CCCEE45006FFFCE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19B264AC09020A8E09D94C21 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AES128Helper/Pods-AES128Helper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		309DE4D0CDC462E1021A3E26 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AES128Helper/Pods-AES128Helper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4A08B1F513E7E9F4DFD1509 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F044AA4A1CCCEE45006FFFCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F044AA591CCCEE45006FFFCE /* ViewController.m in Sources */,
+				F044AA6B1CCCF68F006FFFCE /* AES128Helper.m in Sources */,
+				F044AA561CCCEE45006FFFCE /* AppDelegate.m in Sources */,
+				F044AA531CCCEE45006FFFCE /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F044AA5A1CCCEE45006FFFCE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F044AA5B1CCCEE45006FFFCE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F044AA5F1CCCEE45006FFFCE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F044AA601CCCEE45006FFFCE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F044AA631CCCEE45006FFFCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F044AA641CCCEE45006FFFCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F044AA661CCCEE45006FFFCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B3CCE04285D9B645DBE4C78 /* Pods-AES128Helper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AES128Helper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xweisoft.AES128Helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F044AA671CCCEE45006FFFCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EB440AF6D5AE39D6A1052BE /* Pods-AES128Helper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AES128Helper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xweisoft.AES128Helper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F044AA491CCCEE45006FFFCE /* Build configuration list for PBXProject "AES128Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F044AA631CCCEE45006FFFCE /* Debug */,
+				F044AA641CCCEE45006FFFCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F044AA651CCCEE45006FFFCE /* Build configuration list for PBXNativeTarget "AES128Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F044AA661CCCEE45006FFFCE /* Debug */,
+				F044AA671CCCEE45006FFFCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F044AA461CCCEE45006FFFCE /* Project object */;
+}

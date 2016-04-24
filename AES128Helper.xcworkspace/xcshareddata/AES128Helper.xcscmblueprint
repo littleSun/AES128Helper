@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AB553EEB735684CFF762D0877490F57A8E2486D8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "19C4FE589CB1EA9CC355A95A40944A8770F8F381" : 0,
+    "AB553EEB735684CFF762D0877490F57A8E2486D8" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A27DAA3C-6008-4113-A428-D66360E4E2EB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "19C4FE589CB1EA9CC355A95A40944A8770F8F381" : "AES128Helper\/AES128Helper\/",
+    "AB553EEB735684CFF762D0877490F57A8E2486D8" : "AES128Helper\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "AES128Helper",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "AES128Helper.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/littleSun\/AES128Helper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "19C4FE589CB1EA9CC355A95A40944A8770F8F381"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/littleSun\/AES128Helper.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AB553EEB735684CFF762D0877490F57A8E2486D8"
+    }
+  ]
+}
