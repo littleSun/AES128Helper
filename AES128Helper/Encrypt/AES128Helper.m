@@ -12,7 +12,7 @@
 
 @implementation AES128Helper
 
-+(NSString *)AES128Encrypt:(NSString *)plainText key:(NSString *)key
++(NSString *)AES128EncryptText:(NSString *)plainText key:(NSString *)key
 {
     NSMutableData *keyData = [NSMutableData dataWithLength:kCCKeySizeAES128];
     [keyData setData:[self convertHexStrToData:key]];
@@ -49,7 +49,7 @@
 }
 
 
-+(NSString *)AES128Decrypt:(NSString *)encryptText key:(NSString *)key
++(NSString *)AES128DecryptText:(NSString *)encryptText key:(NSString *)key
 {
     NSMutableData *keyData = [NSMutableData dataWithLength:kCCKeySizeAES128];
     [keyData setData:[self convertHexStrToData:key]];
@@ -82,6 +82,77 @@
     free(buffer);
     return nil;
 }
+
+
++(NSData *)AES128Encrypt:(NSData *)plainData key:(NSString *)key
+{
+    NSMutableData *keyData = [NSMutableData dataWithLength:kCCKeySizeAES128];
+    [keyData setData:[self convertHexStrToData:key]];
+    [keyData setLength:kCCKeySizeAES128];
+    
+    const char *keyPtr = keyData.bytes;
+    
+    NSData* data = plainData;
+    NSUInteger dataLength = [data length];
+    
+    size_t bufferSize = (dataLength + kCCBlockSizeAES128) &~(kCCBlockSizeAES128 - 1);
+    void *buffer = malloc(bufferSize* sizeof(char));
+    
+    size_t numBytesEncrypted = 0;
+    
+    CCCryptorStatus cryptStatus = CCCrypt(kCCEncrypt,
+                                          kCCAlgorithmAES128,
+                                          kCCOptionPKCS7Padding|kCCOptionECBMode,
+                                          keyPtr,
+                                          kCCKeySizeAES128,
+                                          NULL,
+                                          [data bytes],
+                                          dataLength,
+                                          buffer,
+                                          bufferSize,
+                                          &numBytesEncrypted);
+    if (cryptStatus == kCCSuccess) {
+        NSData *resultData = [NSData dataWithBytesNoCopy:buffer length:numBytesEncrypted];
+        return resultData;
+    }
+    free(buffer);
+    return nil;
+}
+
++(NSData *)AES128Decrypt:(NSData *)encryptData key:(NSString *)key
+{
+    NSMutableData *keyData = [NSMutableData dataWithLength:kCCKeySizeAES128];
+    [keyData setData:[self convertHexStrToData:key]];
+    [keyData setLength:kCCKeySizeAES128];
+    
+    const char *keyPtr = keyData.bytes;
+    
+    NSData *data = encryptData;
+    NSUInteger dataLength = [data length];
+    
+    size_t bufferSize = (dataLength + kCCBlockSizeAES128) &~(kCCBlockSizeAES128 - 1);
+    void *buffer = malloc(bufferSize* sizeof(char));
+    
+    size_t numBytesCrypted = 0;
+    CCCryptorStatus cryptStatus = CCCrypt(kCCDecrypt,
+                                          kCCAlgorithmAES128,
+                                          kCCOptionPKCS7Padding|kCCOptionECBMode,
+                                          keyPtr,
+                                          kCCBlockSizeAES128,
+                                          NULL,
+                                          [data bytes],
+                                          dataLength,
+                                          buffer,
+                                          bufferSize,
+                                          &numBytesCrypted);
+    if (cryptStatus == kCCSuccess) {
+        NSData *resultData = [NSData dataWithBytesNoCopy:buffer length:numBytesCrypted];
+        return resultData;
+    }
+    free(buffer);
+    return nil;
+}
+
 
 + (NSString *)convertDataToHexStr:(NSData *)data {
     if (!data || [data length] == 0) {

@@ -22,9 +22,9 @@
     NSString *key = @"e10adc3949ba59abbe56e057f20f883e";
     NSString *originalText = @"AES";
     
-    NSString *encryptText = [AES128Helper AES128Encrypt:originalText key:key];
+    NSString *encryptText = [AES128Helper AES128EncryptText:originalText key:key];
     
-    NSString *plainText = [AES128Helper AES128Decrypt:encryptText key:key];
+    NSString *plainText = [AES128Helper AES128DecryptText:encryptText key:key];
     
     NSLog(@"\noriginal:\t%@\nencrypt:\t%@\ndecrypt:\t%@\n",originalText,encryptText,plainText);
 }
